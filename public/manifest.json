@@ -1,0 +1,8 @@
+{
+  "short_name": "Turing React",
+  "name": "Turing-camp React Exercizes",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
