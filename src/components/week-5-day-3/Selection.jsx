@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './Selection.module.css'
 import ReactDOM from 'react-dom'
 
