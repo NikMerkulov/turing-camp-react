@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
+}
+.container > div {
+  padding: 10px;
+}
+.one > input {
+  margin-left: 5px;
+}
+hr {
+  border-color: #000;
+  margin: 0;
+  width: 94%;
+  position: relative;
+  left: 3%;
+}
+a {
+  color: #69BB69;
+}
+.six {
+  display: flex;
+  gap: 10px;
+}
