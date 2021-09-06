@@ -6,7 +6,7 @@ const Image = ({src, width, height}) =>
   <img src={src} width={width} height={height} alt='' />
 
 Image.propTypes = {
-  src: PropTypes.string,
+  src: PropTypes.string.isRequired,
   width: PropTypes.string,
   height: PropTypes.string
 }
@@ -16,17 +16,16 @@ const Button = ({text, onClick}) =>
   <button onClick={onClick}>{text}</button>
 
 Button.propTypes = {
-  text: PropTypes.string,
-  onChange: PropTypes.func
+  text: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired
 }
 // << HEADER >>
 const Header = ({text, color}) =>
   <h1 style={{color: color}}>{text}</h1>
 
 Header.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   color: PropTypes.string
-
 }
 // << LINK >>
 
@@ -34,8 +33,8 @@ const Link = ({href, text, isUnderlined}) =>
   <a href={href} style={{textDecoration: isUnderlined ? 'underline' : 'none'}}>{text}</a>
 
 Link.propTypes = {
-  href: PropTypes.string,
-  text: PropTypes.string,
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   isUnderlined: PropTypes.bool
 }
 // << UNORDERED LIST >>
@@ -49,7 +48,7 @@ const UnorderedList = ({listItems}) => {
 }
 
 UnorderedList.propTypes = {
-  listItems: PropTypes.array
+  listItems: PropTypes.array.isRequired
 }
 // << SMART BUTTON >> 
 
@@ -58,11 +57,11 @@ const SmartButton = ({isButton, href, text, onClick, isUnderlined}) => isButton 
   <Link href={href} text={text} isUnderlined={isUnderlined}/>
 
 SmartButton.propTypes = {
-  isButton: PropTypes.bool,
-  href: PropTypes.string,
-  text: PropTypes.string,
-  onClick: PropTypes.func,
-  isSelected: PropTypes.bool
+  isButton: PropTypes.bool.isRequired,
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isUnderlined: PropTypes.bool
 }
 // MAIN
 
