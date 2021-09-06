@@ -13,6 +13,10 @@ settings.json
 # production
 /build
 
+# Visual Studio Code
+/.vscode
+settings.json
+
 # misc
 .DS_Store
 .env.local

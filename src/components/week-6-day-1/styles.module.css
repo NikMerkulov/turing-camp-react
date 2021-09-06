@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4);
+  width: 600px;
+}
+.container > div {
+  padding: 10px;
+}
+.one > input {
+  margin-left: 5px;
+}
+hr {
+  border-color: #000;
+  margin: 0;
+  width: 94%;
+  position: relative;
+  left: 3%;
+}
+.four > div {
+  margin-top: 5px;
+  overflow-y: scroll;
+  height: 200px;
+}
